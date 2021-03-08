@@ -6,6 +6,6 @@
 /*# sourceMappingURL=tailwind.css.map */
 @layer base {
 	li {
-		@apply text-5xl;
+		@apply font-bold;
 	}
 }

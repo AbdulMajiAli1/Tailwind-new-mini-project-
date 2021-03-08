@@ -9,26 +9,64 @@
 	<link href="./assets/css/styles.css" rel="stylesheet">
 </head>
 
-<body>
-	<div class="container mx-auto">
-		<h1 class="mt-6 mb-6 text-6xl text-red-700">TailwindCSS setup completed</h1>
-		<p>Version: 0.0.2</p>
-		<a href="about.html">About</a>
-		<h2 class="mt-6 mb-6 text-3xl">Sart your amazing work in index.html</h2>
-		<h2 class="mt-6 mb-6 text-3xl text-blue-700">BENEFITS</h2>
+<body class="bg-blue-400">
+	<div class="min-h-screen container bg-white mx-auto px-8 py-10">
+		<section class="mt-2 mx-auto text-center">
+			<! - page header / headings ->
+				<div>
+					<h1 class="text-3xl my-8">Tom Gonzales home training <br> I'll get you in shape!</h1>
+					<h2 class="text-2xl mt-6">Muscle building • Functional training • Nutritional advice</h2>
+				</div>
+		</section>
 
+		<section class="mx-auto mt-8 grid grid-cols-2 gap-4">
+			<! - picture ->
+				<div id="image">
+					<img src="./assets/img/tom.jpg" alt="Tom Gonzales Online Training">
+				</div>
+		
+			<! - Services ->
+				<div id="services">
+					<h3 class="text-xl my-4">I offer you:</h3>
+					<ul>
+						<li>Lessons via Skype and you can record all sessions and watch them again later. </li>
+						<li>Holistic full body training</li>
+						<li>Training without equipment</li>
+						<li>Pain reduction</li>
+						<li>Tailored nutrition plans</li>
+					</ul>
+					<h3 class="text-xl my-4">My qualifications:</h3>
+					<ul>
+						<li>Certified nutritionist</li>
+						<li>Certified fitness trainer</li>
+						<li>5 years of experience in 1: 1 training</li>
+					</ul>
+				</div>
+				</section>
 
-		<ol class="ml-10 list-decimal">
-			<li>Zero Setup</li>
-			<li>Live Reloads</li>
-			<li>Github pages ready</li>
+		<section class="mt-8 mx-auto">
+			<! - Prices and payment ->
+				<div id="price_payment" class="w-8/12 mx-auto">
+					<h2>Prices and payment</h2>
+					<p>My most important goal is that you get ahead with your goals.</p>
+					<p>In a free opening session we will discuss what you want to achieve and how much you can or want
+						to spend. Then we are guaranteed to find a solution that suits you.</p>
+				</div>
+		</section>
 
-		</ol>
-		<p class="mt-10">
-			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto minus libero a quas praesentium dolores
-			inventore fugit, cumque quibusdam facilis incidunt? Pariatur reiciendis voluptatem ipsam at! Sequi fugit eum
-			voluptates.
-		</p>
+		<section class="mx-auto mt-8">
+			<! - Contact ->
+				<div id=" contact" class=" w-8/12 grid grid-cols-2 mx-auto gap-4">
+					<div id="email">
+						<p>Your message:</p>
+						<a href="mailto:markusgonzales@gmail.com">Send an Email</a>
+					</div>
+					<div id="whatsApp_telefon">
+						<p>WhatsApp:</p>
+						1 222 555 44 33
+					</div>
+				</div>
+		</section>
 	</div>
 
 </body>

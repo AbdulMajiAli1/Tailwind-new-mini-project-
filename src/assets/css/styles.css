@@ -548,6 +548,13 @@ video {
   height: auto;
 }
 
+li {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgba(229, 231, 235, var(--tw-text-opacity));
+}
+
 .container {
   width: 100%;
 }

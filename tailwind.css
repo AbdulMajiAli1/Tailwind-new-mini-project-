@@ -5,7 +5,7 @@
 @tailwind utilities;
 /*# sourceMappingURL=tailwind.css.map */
 @layer base {
-	li {
-		@apply font-bold;
+	ul {
+		@apply bg-red-400;
 	}
 }

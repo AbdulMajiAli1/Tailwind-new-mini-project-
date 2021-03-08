@@ -4,8 +4,3 @@
 /* purgecss end ignore */
 @tailwind utilities;
 /*# sourceMappingURL=tailwind.css.map */
-@layer base {
-	ul {
-		@apply bg-red-400;
-	}
-}

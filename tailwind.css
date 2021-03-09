@@ -5,6 +5,3 @@
 @tailwind utilities;
 /*# sourceMappingURL=tailwind.css.map */
 
-@layer base {
-	h1 @apply
-}

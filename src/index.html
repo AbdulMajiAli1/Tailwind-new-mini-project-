@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html x-data="{ dark: ture }" x-bind:class="dark ? 'dark' : '' " lang="en">
+<html x-data="{ dark: false }" x-bind:class="dark ? 'dark' : '' " lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -14,14 +14,33 @@
 <body class="bg-gray-400">
 	<div class="min-h-screen dark:bg-gray-700 container  mx-auto px-8 py-10">
 		<section class="mt-2 mx-auto text-center">
-			<button @click="dark = !dark" class="px-8 py-2 bg-gray-300 text-white">Dark Mode</button>
+			<button @click="dark = !dark"
+				class="px-8 py-2 bg-gray-500 hover:bg-gray-600 focus:outline-none rounded text-white flex items-center leading-6">
+				<span>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" x-show="dark" class="h-6 mr-6 text-yellow-200"
+						fill="currentColor">
+						<path fill-rule="evenodd"
+							d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+							clip-rule="evenodd" />
+					</svg>
+				</span>
+				<span x-text="dark ? 'Switch to Noraml Mode' : 'Switch to Dark Mode' "></span>
+				<span>
+					<svg xmlns="http://www.w3.org/2000/svg" x-show="!dark" viewBox="0 0 20 20" fill="currentColor"
+						class="h-6 text-white ml-6 ">
+						<path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+					</svg>
+				</span>
+			</button>
 			<!-- <! - page header / headings -> -->
 			<div>
-				<h1 class="md:text-4xl lg:text-6xl text-xl sm:text-2xl my-8 font-mono font-black dark:text-pink-300">Tom Gonzales home
+				<h1 class="md:text-4xl lg:text-6xl text-xl sm:text-2xl my-8 font-mono font-black dark:text-pink-300">Tom
+					Gonzales home
 					training <br>
 					<q class="italic text-purple-700 dark:text-indigo-300">I'll get you in shape!</q>
 				</h1>
-				<h2 class="md:text-3xl lg:text-4xl  sm:text-2xl font-serif font-light sm:font-bold mt-6">Muscle building • Functional
+				<h2 class="md:text-3xl lg:text-4xl  sm:text-2xl font-serif font-light sm:font-bold mt-6">Muscle building
+					• Functional
 					training <span class="sm:inline hidden">•</span>
 					Nutritional
 					advice
@@ -67,7 +86,8 @@
 			<div id="price_payment" class="lg:w-7/12 md:w-8/12 md:mx-auto">
 				<h2 class="md:text-2xl text-xl font-bold mb-4">Prices and payment</h2>
 				<p class="sm:text-xl">My most important goal is that you get ahead with your goals.</p>
-				<p class="sm:text-xl text-justify">In a free opening session we will discuss what you want to achieve and how
+				<p class="sm:text-xl text-justify">In a free opening session we will discuss what you want to achieve
+					and how
 					much you can or want
 					to spend. Then we are guaranteed to find a solution that suits you.</p>
 			</div>
@@ -83,7 +103,7 @@
 					</button>
 				</div>
 				<div>
-					<h1 class="border-b-2 border-gray-700 mb-4">WhatsApp Number</h1>
+					<h1 class="border-b-2 border-gray-700 mb-4 transition">WhatsApp Number</h1>
 					<p class="lg:text-2xl text-lg"> 2335 2155 3589</p>
 				</div>
 			</div>
